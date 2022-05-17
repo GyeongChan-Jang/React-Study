@@ -1,10 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const ProductList = styled.div`
-  text-align: center;
-`
-
 const Box = styled.div`
   background-color: #0b132b;
   width: 300px;
