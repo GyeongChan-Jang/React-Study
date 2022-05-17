@@ -128,6 +128,7 @@ function App() {
         onRemove={onRemove}
         onEdit={onEdit}
         isModal={isModal}
+        setIsModal={setIsModal}
       />
     </div>
   )
