@@ -1,7 +1,6 @@
 import Form from './components/Form'
 import Product from './components/Product'
 import { useState, useReducer, useEffect } from 'react'
-import DUMMY_PRODUCTS from './components/DummyData'
 
 const initialState = {
   id: '',
