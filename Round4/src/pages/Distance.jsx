@@ -1,5 +1,5 @@
 import React from 'react'
-import dummys from './Dummys'
+import dummys from '../components/Dummys'
 
 const Distance = () => {
   const dummyItems = dummys

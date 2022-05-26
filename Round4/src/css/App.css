@@ -15,6 +15,10 @@ h1 {
   margin: 2rem;
 }
 
+h2 {
+  text-align: center;
+}
+
 .title {
   font-size: 3rem;
 }
@@ -108,12 +112,13 @@ header button:hover {
   box-shadow: 1px 0.5px 5px 1px;
 }
 
-.country-items > div {
+.country-items .country-name {
   cursor: pointer;
   padding: 0.5rem;
   font-size: 1.5rem;
   color: coral;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-decoration: none;
 }
 
 /* Region */
@@ -225,4 +230,44 @@ header button:hover {
 .sale-items .no-sale {
   margin: 5rem auto;
   font-size: 2rem;
+}
+
+/* In Country */
+.image-flag {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.flag {
+  width: 300px;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.scenery {
+  width: 100%;
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+/* Login */
+.login {
+  width: 250px;
+  margin: 0 auto;
+  text-align: right;
+  
+}
+
+.login-inner {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+}
+
+.login-link {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
 }

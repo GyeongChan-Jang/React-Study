@@ -1,10 +1,19 @@
 import React from 'react'
+import { Outlet, Link, Redirect } from 'react-router-dom'
+import Category from './Category'
+import Country from './Country'
+import Login from './Login'
 
-function Home() {
+const Home = ({ isLogged, onLogin }) => {
   return (
     <div>
-      <h1>Home</h1>
-      <p>이곳은 홈입니다.</p>
+      <h1 className="title">Where Do You want to Go?</h1>
+      <Category isLogged={isLogged} onLogin={onLogin} />
+      {!isLogged && (
+        <h1 className="login-link">
+          <Link to="/login">Please Login!</Link>
+        </h1>
+      )}
     </div>
   )
 }

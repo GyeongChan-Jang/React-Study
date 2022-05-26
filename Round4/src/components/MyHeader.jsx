@@ -14,7 +14,7 @@ const MyHeader = () => {
         <button onClick={() => navigate('/')}>Home</button>
       </div>
       <div className="next">
-        <button onClick={() => navigate(+1)}>Next</button>
+        <button onClick={() => navigate(1)}>Next</button>
       </div>
     </header>
   )
