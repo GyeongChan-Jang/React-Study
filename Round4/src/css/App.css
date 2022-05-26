@@ -256,18 +256,50 @@ header button:hover {
 .login {
   width: 250px;
   margin: 0 auto;
-  text-align: right;
-  
+  text-align: end;
 }
 
 .login-inner {
   display: flex;
   flex-direction: column;
-  border: 1px solid;
+  border: 1.5px solid;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 10px 10px 5px 0px rgba(229,229,229,1);
+  align-content: space-around;
+}
+
+.login-inner h1 {
+  border-bottom: 1px solid;
+  padding-bottom: 0.5rem;
+}
+
+.login-inner button {
+  background: #cdb4db;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.login-inner button:hover {
+  background: #9b5de5;
+  color: #fff;
+}
+
+.login-inner label {
+  margin-bottom: 0.5rem;
+  margin-right: 1.2rem;
 }
 
 .login-link {
   text-align: center;
   text-decoration: none;
   font-size: 1.5rem;
+}
+
+.active {
+  background: #a2d2ff;
 }

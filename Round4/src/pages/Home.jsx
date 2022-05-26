@@ -1,5 +1,5 @@
 import React from 'react'
-import { Outlet, Link, Redirect } from 'react-router-dom'
+import { Outlet, NavLink, Redirect } from 'react-router-dom'
 import Category from './Category'
 import Country from './Country'
 import Login from './Login'
@@ -11,7 +11,9 @@ const Home = ({ isLogged, onLogin }) => {
       <Category isLogged={isLogged} onLogin={onLogin} />
       {!isLogged && (
         <h1 className="login-link">
-          <Link to="/login">Please Login!</Link>
+          <NavLink to="/login" activeclassname="active">
+            Please Login!
+          </NavLink>
         </h1>
       )}
     </div>
