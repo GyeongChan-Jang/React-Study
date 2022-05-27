@@ -121,6 +121,11 @@ header button:hover {
   text-decoration: none;
 }
 
+.country-details {
+  padding: 1rem;
+}
+
+
 /* Region */
 .region-list {
   display: grid;

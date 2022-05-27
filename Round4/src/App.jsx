@@ -19,14 +19,24 @@ import SouthKorea from './components/SouthKorea'
 import Login from './pages/Login'
 import ErrorPage from './pages/ErrorPage'
 import Home from './pages/Home'
+import Countries from './components/Countries'
+import dummys from './components/Dummys'
 
 function App() {
+  const dummyItems = dummys
   const [isLogged, setIsLogged] = useState(false)
 
   const onLogin = () => {
     setIsLogged((prev) => !prev)
     // console.log(isLogged)
   }
+
+  const countryList = dummyItems.reduce((acc, cur) => {
+    if (acc.findIndex(({ country }) => country === cur.country) === -1) {
+      acc.push(cur)
+    }
+    return acc
+  }, [])
 
   return (
     <BrowserRouter>
@@ -40,14 +50,8 @@ function App() {
             path="/login"
             element={!isLogged && <Login isLogged={isLogged} onLogin={onLogin} />}
           />
-          <Route path="/country" element={<Country />}>
-            <Route path="0" element={<France />} />
-            <Route path="1" element={<Us />} />
-            <Route path="2" element={<Uk />} />
-            <Route path="3" element={<Indonesia />} />
-            <Route path="4" element={<Australia />} />
-            <Route path="5" element={<SouthKorea />} />
-          </Route>
+          <Route path="/country/:country" element={<Countries countryList={countryList} />} />
+          <Route path="/country" element={<Country countryList={countryList} />} />
           <Route path="/region" element={<Region />} />
           <Route path="/city" element={<City />} />
           <Route path="/sale" element={<Sale />} />

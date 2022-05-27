@@ -1,8 +1,6 @@
 import React from 'react'
-import { Outlet, NavLink, Redirect } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Category from './Category'
-import Country from './Country'
-import Login from './Login'
 
 const Home = ({ isLogged, onLogin }) => {
   return (

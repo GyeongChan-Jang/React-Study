@@ -1,27 +1,26 @@
 import React from 'react'
 import dummys from '../components/Dummys'
-import { useParams, useNavigate, Outlet } from 'react-router-dom'
+import { useNavigate, Outlet } from 'react-router-dom'
 
 const dummyItems = dummys
 
-const Country = () => {
+const Country = ({ countryList }) => {
   const navigate = useNavigate()
-  const countryList = dummyItems.reduce((acc, cur) => {
+  countryList = dummyItems.reduce((acc, cur) => {
     if (acc.findIndex(({ country }) => country === cur.country) === -1) {
       acc.push(cur)
     }
     return acc
   }, [])
 
-  // const { id } = useParams()
-
+  console.log(countryList)
   return (
     <div>
       <h1>Country</h1>
       <div className="country-list">
         {countryList?.map((it, i) => (
           <div className="country-items" key={it.id}>
-            <div onClick={() => navigate(`/country/${i}`)} className="country-name">
+            <div onClick={() => navigate(`/country/${it.country}`)} className="country-name">
               {it.country}
             </div>
           </div>

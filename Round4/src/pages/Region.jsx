@@ -3,12 +3,6 @@ import dummys from '../components/Dummys'
 
 const Region = () => {
   const dummyItems = dummys
-  const countryList = dummyItems.reduce((acc, cur) => {
-    if (acc.findIndex(({ country }) => country === cur.country) === -1) {
-      acc.push(cur)
-    }
-    return acc
-  }, [])
 
   return (
     <div>
@@ -22,7 +16,6 @@ const Region = () => {
                 <span>{it.date}</span> {''}
                 {it.region}
               </p>
-
               <p>{it.address}</p>
             </div>
           </div>

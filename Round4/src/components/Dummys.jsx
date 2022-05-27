@@ -13,7 +13,11 @@ const dummys = [
     date: '12.04.18',
     company: 'In Nec Orci LLP',
     city: 'Gunsan',
-    normaldist: 1
+    normaldist: 1,
+    image__flag:
+      'https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png',
+    image__scenery:
+      'https://previews.123rf.com/images/mlsj/mlsj1710/mlsj171000004/88178237-landscape-scenery-view-of-eiffel-tower-in-paris-france.jpg'
   },
   {
     id: 'IMT17EJL3IU',
@@ -45,7 +49,9 @@ const dummys = [
     date: '06.03.20',
     company: 'Est Congue A Corporation',
     city: 'Gjoa Haven',
-    normaldist: 3
+    normaldist: 3,
+    image__flag: 'https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg',
+    image__scenery: 'https://wallpaperaccess.com/full/449975.jpg'
   },
   {
     id: 'CIX86TIP4YM',
@@ -77,7 +83,11 @@ const dummys = [
     date: '01.08.19',
     company: 'Nulla Eu Ltd',
     city: 'Kirkwall',
-    normaldist: 5
+    normaldist: 5,
+    image__flag:
+      'https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png',
+    image__scenery:
+      'https://media.cntraveler.com/photos/5717e7ce3658675c4f785fbc/16:9/w_2580,c_limit/uk-towns-Whitby-Abbey-cr-GettyImages-149606198.jpg'
   },
   {
     id: 'DSK14JYB2FF',
@@ -125,7 +135,10 @@ const dummys = [
     date: '13.01.17',
     company: 'Eu Euismod Corporation',
     city: 'Tuxtla Gutiérrez',
-    normaldist: 8
+    normaldist: 8,
+    image__flag:
+      'https://img5.goodfon.com/wallpaper/nbig/9/d9/indonesia-flag-of-indonesia-indonesia-flag-flag-country.jpg',
+    image__scenery: 'https://s1.1zoom.me/big0/995/Indonesia_Sunrises_and_498144.jpg'
   },
   {
     id: 'JKB01LZV4NS',
@@ -173,7 +186,11 @@ const dummys = [
     date: '25.09.16',
     company: 'Ut Limited',
     city: 'Wichita',
-    normaldist: 11
+    normaldist: 11,
+    image__flag:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/800px-Flag_of_Australia_%28converted%29.svg.png?20211116034747',
+    image__scenery:
+      'https://www.planetware.com/photos-large/AUS/australia-beautiful-places-sydney-harbour.jpg'
   },
   {
     id: 'YHX11DXK4KO',
@@ -221,7 +238,11 @@ const dummys = [
     date: '23.02.18',
     company: 'Tellus Aenean Foundation',
     city: 'Celaya',
-    normaldist: 14
+    normaldist: 14,
+    image__flag:
+      'https://img.theculturetrip.com/450x/smart/wp-content/uploads/2017/02/flag_of_south_korea-svg_.png',
+    image__scenery:
+      'https://www.citieschangingdiabetes.com/network/seoul/_jcr_content/root/imagevideotext_copy.coreimg.jpeg/1605286730135/adobestock-306923135.jpeg'
   },
   {
     id: 'UJL25LPQ4DH',
