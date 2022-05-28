@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Category from './Category'
 
 const Home = ({ isLogged, onLogin }) => {
@@ -9,9 +9,9 @@ const Home = ({ isLogged, onLogin }) => {
       <Category isLogged={isLogged} onLogin={onLogin} />
       {!isLogged && (
         <h1 className="login-link">
-          <NavLink to="/login" activeclassname="active">
+          <Link to="/login" className="login-text">
             Please Login!
-          </NavLink>
+          </Link>
         </h1>
       )}
     </div>

@@ -141,7 +141,7 @@ header button:hover {
 }
 
 .region-items > div > h3 {
-  color: #000;
+  color: #264653;
 }
 
 .region-items > div > p >span {
@@ -159,6 +159,26 @@ header button:hover {
   font-size: 1.5rem;
   color: #0077b6;
   
+}
+
+.region-group {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.region-group > button {
+  width: 12%;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  background: #a2d2ff;
+  padding: 0.2rem;
+  font-family: "Nanum Pen Script";
+  font-size: 1.2rem; 
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: 2px solid #03045e;
 }
 
 /* City */
@@ -299,12 +319,8 @@ header button:hover {
   margin-right: 1.2rem;
 }
 
-.login-link {
-  text-align: center;
+.login-text {
   text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.active {
-  background: #a2d2ff;
+  color:red;
+  font-size: 2rem;
 }
