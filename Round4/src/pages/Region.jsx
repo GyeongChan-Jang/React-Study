@@ -1,5 +1,6 @@
 import dummys from '../components/Dummys'
 import { useLocation, useNavigate, useSearchParams } from 'react-router-dom'
+import { useState } from 'react'
 
 const Region = () => {
   const [searchParams, setSearchParams] = useSearchParams()
@@ -16,10 +17,14 @@ const Region = () => {
       search: `?sort=${isSort ? 'descending' : 'ascending'}`
     })
   }
+
   const dummyItems = dummys
 
   return (
     <div>
+      <div className="btn-sort">
+        <button>Sort</button>
+      </div>
       <div className="region-list">
         {dummyItems.map((it) => (
           <div className="region-items" key={it.id}>
