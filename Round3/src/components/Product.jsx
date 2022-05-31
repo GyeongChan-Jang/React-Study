@@ -1,7 +1,6 @@
 import React from 'react'
 import Button from './Button'
 import styled from 'styled-components'
-import Modal from './Modal'
 
 const ProductList = styled.div`
   text-align: center;
@@ -34,12 +33,29 @@ function Product({
   onRemove,
   isModal,
   onEdit,
+  setIsModal,
 }) {
+  const updateProductHandler = (id, newInput) => {
+    console.log('update')
+    setStoredProduct((prev) =>
+      prev?.map((product) =>
+        product.id === id
+          ? {
+              ...product,
+              title: newInput.title,
+              price: newInput.price,
+              description: newInput.description,
+            }
+          : product,
+      ),
+    )
+    setIsModal((prev) => !prev)
+  }
+
   return (
     <>
       {storedProduct.length >= 1 && (
         <>
-          {isModal && <Modal />}
           <ProductList className="product-list">
             <h2>Product List</h2>
           </ProductList>
@@ -55,6 +71,8 @@ function Product({
                   onRemove={onRemove}
                   id={it.id}
                   onEdit={onEdit}
+                  isModal={isModal}
+                  updateProductHandler={updateProductHandler}
                 />
               </ProductItem>
             ))}

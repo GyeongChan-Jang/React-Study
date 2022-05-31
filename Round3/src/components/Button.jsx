@@ -26,14 +26,22 @@ const Btn = styled.div`
   }
 `
 
-function Button({ id, onRemove, onEdit }) {
+function Button({
+  id,
+  onRemove,
+  onEdit,
+  isModal,
+  updateProductHandler,
+}) {
   return (
-    <Btn>
-      <button className="minus">-</button>
-      <button className="plus">+</button>
-      <button onClick={onEdit}>수정</button>
-      <button onClick={() => onRemove(id)}>삭제</button>
-    </Btn>
+    <>
+      <Btn>
+        <button className="minus">-</button>
+        <button className="plus">+</button>
+        <button onClick={onEdit}>수정</button>
+        <button onClick={() => onRemove(id)}>삭제</button>
+      </Btn>
+    </>
   )
 }
 
